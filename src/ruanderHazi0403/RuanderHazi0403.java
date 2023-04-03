@@ -1,5 +1,6 @@
 package ruanderHazi0403;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class RuanderHazi0403 {
@@ -20,11 +21,11 @@ public class RuanderHazi0403 {
          */
 
     public static void main(String[] args) {
-        aFeladat();
+        bFeladat();
     }
 
-    static void aFeladat(){
-        String[] keresztNevek ={"aaa","nnnnnssssnnnnnnnn","oo","swwww","bbssb","nnnnnn","nnnnnnnn","mmmssssssssssssssmmmm","ppppppppp","zzzzzzzzzzzz"};
+    static void aFeladat() {
+        String[] keresztNevek = {"aaa", "nnnnnssssnnnnnnnn", "oo", "swwww", "bbssb", "nnnnnn", "nnnnnnnn", "mmmssssssssssssssmmmm", "ppppppppp", "zzzzzzzzzzzz"};
 //        tombFeltoltes(keresztNevek);
 //        System.out.println();
         mindenMasodikNev(keresztNevek);
@@ -33,8 +34,52 @@ public class RuanderHazi0403 {
         System.out.println();
         legtobbSANevben(keresztNevek);
     }
+    static void bFeladat() {
+        int[][] matrix1= new int[4][3];
+        int[][] matrix2= new int[4][3];
+        matrixFeltoltes(matrix1);
+        matrix1Transzponalas(matrix1,matrix2);
+        matrixokListazasa(matrix1,matrix2);
+    }
+    static void matrixFeltoltes(int[][] matrix1){
+        Random random = new Random();
+        for(int i = 0;i< matrix1.length;i++){
+            for(int j=0;j<matrix1[i].length;j++){
+                matrix1[i][j]= random.nextInt(50,101);
 
-    static void tombFeltoltes(String[] keresztNevek){
+            }
+        }
+    }
+    static void matrix1Transzponalas(int[][] matrix1, int[][] matrix2){
+        for(int i = 0;i< matrix1.length;i++){
+            for(int j=0;j<matrix1[i].length;j++){
+                matrix2[i][j]=matrix1[i][j];
+
+            }
+        }
+    }
+
+    static void matrixokListazasa(int[][] matrix1, int[][] matrix2){
+        System.out.println("matrix1");
+        for (int[] ints : matrix1) {
+            for (int j = 0; j < ints.length; j++) {
+                System.out.print(ints[j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n\nmatrix2");
+        for (int[] tomb : matrix2) {
+            for (int j = 0; j < tomb.length; j++) {
+                System.out.print(tomb[j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+
+
+    static void tombFeltoltes(String[] keresztNevek) {
 
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < keresztNevek.length; i++) {
@@ -45,7 +90,7 @@ public class RuanderHazi0403 {
         sc.close();
     }
 
-    static void mindenMasodikNev(String[] keresztNevek){
+    static void mindenMasodikNev(String[] keresztNevek) {
         System.out.println("Minden 2.: ");
         for (int i = 0; i < keresztNevek.length; i++) {
             if (i % 2 == 1) {
@@ -55,19 +100,20 @@ public class RuanderHazi0403 {
         }
         System.out.println();
     }
-    static void legHosszabbNev(String[] keresztNevek){
+
+    static void legHosszabbNev(String[] keresztNevek) {
         int nevHossza = keresztNevek[0].length();
-        int leghosszabbNevIndex=0;
-        for(int i = 1; i< keresztNevek.length;i++){
-            if(nevHossza<keresztNevek[i].length()){
-                leghosszabbNevIndex=i;
-                nevHossza=keresztNevek[i].length();
+        int leghosszabbNevIndex = 0;
+        for (int i = 1; i < keresztNevek.length; i++) {
+            if (nevHossza < keresztNevek[i].length()) {
+                leghosszabbNevIndex = i;
+                nevHossza = keresztNevek[i].length();
             }
         }
-        System.out.println("A leghosszabb név: "+keresztNevek[leghosszabbNevIndex]+" a hossza: "+nevHossza+" karakter");
+        System.out.println("A leghosszabb név: " + keresztNevek[leghosszabbNevIndex] + " a hossza: " + nevHossza + " karakter");
     }
 
-    static void legtobbSANevben(String[] keresztNevek){
+    static void legtobbSANevben(String[] keresztNevek) {
         int legtobb = 0;
         String nev = "";
         for (String s : keresztNevek) {
@@ -78,13 +124,13 @@ public class RuanderHazi0403 {
                 }
             }
             System.out.println("A név: " + s + " " + tartalmaz + "db s-t tartalmaz");
-            if(tartalmaz>legtobb){
-                legtobb=tartalmaz;
-                nev=s;
+            if (tartalmaz > legtobb) {
+                legtobb = tartalmaz;
+                nev = s;
             }
 
         }
-        System.out.println( "\na legtöbb \"s\": "+legtobb+", a név: "+nev);
+        System.out.println("\na legtöbb \"s\": " + legtobb + ", a név: " + nev);
     }
 
 }
