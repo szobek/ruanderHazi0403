@@ -21,7 +21,7 @@ public class RuanderHazi0403 {
          */
 
     public static void main(String[] args) {
-        bFeladat();
+        cFeladat();
     }
 
     static void aFeladat() {
@@ -41,6 +41,7 @@ public class RuanderHazi0403 {
         matrix1Transzponalas(matrix1,matrix2);
         matrixokListazasa(matrix1,matrix2);
     }
+    //------------------------------------------------------------------------------------------------------------------
     static void matrixFeltoltes(int[][] matrix1){
         Random random = new Random();
         for(int i = 0;i< matrix1.length;i++){
@@ -60,6 +61,7 @@ public class RuanderHazi0403 {
     }
 
     static void matrixokListazasa(int[][] matrix1, int[][] matrix2){
+
         System.out.println("matrix1");
         for (int[] ints : matrix1) {
             for (int j = 0; j < ints.length; j++) {
@@ -76,7 +78,51 @@ public class RuanderHazi0403 {
             System.out.println();
         }
     }
+//----------------------------------------------------------------------------------------------------------------------
 
+    static void cFeladat(){
+        double[][] matrix = new double[3][3];
+        matrixFeltoltesUjra(matrix);
+        forditottLista(matrix);
+    }
+
+    static void matrixFeltoltesUjra(double[][] matrix){
+        Random random = new Random();
+        for(int i = 0;i< matrix.length;i++){
+            for(int j=0;j<matrix[i].length;j++){
+                matrix[i][j]= (int) Math.pow(random.nextDouble(10),2);
+
+            }
+        }
+    }
+    static void atloSzamokEsOsszeguk(double[][] matrix){
+
+    }
+
+    static void forditottLista(double[][] matrix){
+        ellenorzoLista(matrix);
+        System.out.println();
+        for(int i = matrix.length-1;i>=0;i--){
+            for(int j=matrix[i].length-1;j>=0;j--){
+                System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void ellenorzoLista(double[][] matrix){
+        for (double[] elem : matrix) {
+            for (int j = 0; j < elem.length; j++) {
+                System.out.print(elem[j] + " ");
+
+            }
+            System.out.println();
+        }
+    }
+
+
+
+//----------------------------------------------------------------------------------------------------------------------
 
 
     static void tombFeltoltes(String[] keresztNevek) {
