@@ -67,16 +67,16 @@ public class RuanderHazi0403 {
 
         System.out.println("matrix1");
         for (int[] ints : matrix1) {
-            for (int j = 0; j < ints.length; j++) {
-                System.out.print(ints[j] + " ");
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
             }
             System.out.println();
         }
 
         System.out.println("\n\nmatrix2");
         for (int[] tomb : matrix2) {
-            for (int j = 0; j < tomb.length; j++) {
-                System.out.print(tomb[j] + " ");
+            for (int i : tomb) {
+                System.out.print(i + " ");
             }
             System.out.println();
         }
