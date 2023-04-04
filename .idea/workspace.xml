@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2832f168-3c4d-4c12-b4a9-23c157a1b2de" name="Changes" comment="kész a &quot;b&quot; feladat">
+    <list default="true" id="2832f168-3c4d-4c12-b4a9-23c157a1b2de" name="Changes" comment="kész a &quot;c&quot; feladat">
+      <change afterPath="$PROJECT_DIR$/src/ruanderHazi0403/masodik/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ruanderHazi0403/RuanderHazi0403.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ruanderHazi0403/RuanderHazi0403.java" afterDir="false" />
     </list>
@@ -68,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680548687130</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="kész a &quot;c&quot; feladat">
+      <created>1680592980501</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680592980501</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,6 +94,7 @@
     <MESSAGE value="kész az &quot;a&quot; feladat" />
     <MESSAGE value="javítva az &quot;a&quot; feladat" />
     <MESSAGE value="kész a &quot;b&quot; feladat" />
-    <option name="LAST_COMMIT_MESSAGE" value="kész a &quot;b&quot; feladat" />
+    <MESSAGE value="kész a &quot;c&quot; feladat" />
+    <option name="LAST_COMMIT_MESSAGE" value="kész a &quot;c&quot; feladat" />
   </component>
 </project>

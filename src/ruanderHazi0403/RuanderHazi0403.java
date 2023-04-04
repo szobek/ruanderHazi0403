@@ -34,33 +34,36 @@ public class RuanderHazi0403 {
         System.out.println();
         legtobbSANevben(keresztNevek);
     }
+
     static void bFeladat() {
-        int[][] matrix1= new int[4][3];
-        int[][] matrix2= new int[4][3];
+        int[][] matrix1 = new int[4][3];
+        int[][] matrix2 = new int[4][3];
         matrixFeltoltes(matrix1);
-        matrix1Transzponalas(matrix1,matrix2);
-        matrixokListazasa(matrix1,matrix2);
+        matrix1Transzponalas(matrix1, matrix2);
+        matrixokListazasa(matrix1, matrix2);
     }
+
     //------------------------------------------------------------------------------------------------------------------
-    static void matrixFeltoltes(int[][] matrix1){
+    static void matrixFeltoltes(int[][] matrix1) {
         Random random = new Random();
-        for(int i = 0;i< matrix1.length;i++){
-            for(int j=0;j<matrix1[i].length;j++){
-                matrix1[i][j]= random.nextInt(50,101);
-
-            }
-        }
-    }
-    static void matrix1Transzponalas(int[][] matrix1, int[][] matrix2){
-        for(int i = 0;i< matrix1.length;i++){
-            for(int j=0;j<matrix1[i].length;j++){
-                matrix2[i][j]=matrix1[i][j];
+        for (int i = 0; i < matrix1.length; i++) {
+            for (int j = 0; j < matrix1[i].length; j++) {
+                matrix1[i][j] = random.nextInt(50, 101);
 
             }
         }
     }
 
-    static void matrixokListazasa(int[][] matrix1, int[][] matrix2){
+    static void matrix1Transzponalas(int[][] matrix1, int[][] matrix2) {
+        for (int i = 0; i < matrix1.length; i++) {
+            for (int j = 0; j < matrix1[i].length; j++) {
+                matrix2[i][j] = matrix1[i][j];
+
+            }
+        }
+    }
+
+    static void matrixokListazasa(int[][] matrix1, int[][] matrix2) {
 
         System.out.println("matrix1");
         for (int[] ints : matrix1) {
@@ -80,46 +83,64 @@ public class RuanderHazi0403 {
     }
 //----------------------------------------------------------------------------------------------------------------------
 
-    static void cFeladat(){
+    static void cFeladat() {
         double[][] matrix = new double[3][3];
         matrixFeltoltesUjra(matrix);
         forditottLista(matrix);
     }
 
-    static void matrixFeltoltesUjra(double[][] matrix){
+    static void matrixFeltoltesUjra(double[][] matrix) {
         Random random = new Random();
-        for(int i = 0;i< matrix.length;i++){
-            for(int j=0;j<matrix[i].length;j++){
-                matrix[i][j]= (int) Math.pow(random.nextDouble(10),2);
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = Math.pow(random.nextInt(10), 2);
 
             }
         }
     }
-    static void atloSzamokEsOsszeguk(double[][] matrix){
 
+    static void atloSzamokEsOsszeguk(double[][] matrix) {
+        double atloOsszeg = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (i == 0 && j == 0) {
+                    System.out.println("az átlóban az első: " + matrix[i][j]);
+                    atloOsszeg += matrix[i][j];
+                }
+                if (i == 1 && j == 1) {
+                    System.out.println("az átlóban a 2.: " + matrix[i][j]);
+                    atloOsszeg += matrix[i][j];
+                }
+                if (i == 2 && j == 2) {
+                    System.out.println("az átlóban a 3.: " + matrix[i][j]);
+                    atloOsszeg += matrix[i][j];
+                }
+            }
+        }
+        System.out.println("Az átló összege: "+atloOsszeg);
     }
 
-    static void forditottLista(double[][] matrix){
+    static void forditottLista(double[][] matrix) {
         ellenorzoLista(matrix);
         System.out.println();
-        for(int i = matrix.length-1;i>=0;i--){
-            for(int j=matrix[i].length-1;j>=0;j--){
-                System.out.print(matrix[i][j]+" ");
+        for (int i = matrix.length - 1; i >= 0; i--) {
+            for (int j = matrix[i].length - 1; j >= 0; j--) {
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
+        atloSzamokEsOsszeguk(matrix);
     }
 
-    static void ellenorzoLista(double[][] matrix){
+    static void ellenorzoLista(double[][] matrix) {
         for (double[] elem : matrix) {
-            for (int j = 0; j < elem.length; j++) {
-                System.out.print(elem[j] + " ");
+            for (double v : elem) {
+                System.out.print(v + " ");
 
             }
             System.out.println();
         }
     }
-
 
 
 //----------------------------------------------------------------------------------------------------------------------
