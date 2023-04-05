@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2832f168-3c4d-4c12-b4a9-23c157a1b2de" name="Changes" comment="kész a &quot;c&quot; feladat">
-      <change afterPath="$PROJECT_DIR$/src/ruanderHazi0403/masodik/Main.java" afterDir="false" />
+    <list default="true" id="2832f168-3c4d-4c12-b4a9-23c157a1b2de" name="Changes" comment="warnings javítva">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ruanderHazi0403/RuanderHazi0403.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ruanderHazi0403/RuanderHazi0403.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ruanderHazi0403/masodik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ruanderHazi0403/masodik/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680592980501</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="javítva a &quot;c&quot; feladat">
+      <created>1680628575598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680628575598</updated>
+    </task>
+    <task id="LOCAL-00006" summary="warnings javítva">
+      <created>1680628730162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680628730162</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +109,9 @@
     <MESSAGE value="javítva az &quot;a&quot; feladat" />
     <MESSAGE value="kész a &quot;b&quot; feladat" />
     <MESSAGE value="kész a &quot;c&quot; feladat" />
-    <option name="LAST_COMMIT_MESSAGE" value="kész a &quot;c&quot; feladat" />
+    <MESSAGE value="javítva a &quot;c&quot; feladat" />
+    <MESSAGE value="warnins javítva" />
+    <MESSAGE value="warnings javítva" />
+    <option name="LAST_COMMIT_MESSAGE" value="warnings javítva" />
   </component>
 </project>
