@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2832f168-3c4d-4c12-b4a9-23c157a1b2de" name="Changes" comment="warnings javítva">
+    <list default="true" id="2832f168-3c4d-4c12-b4a9-23c157a1b2de" name="Changes" comment="warnings javítva,matrix int dfoubleből">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ruanderHazi0403/RuanderHazi0403.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ruanderHazi0403/RuanderHazi0403.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ruanderHazi0403/masodik/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ruanderHazi0403/masodik/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680628730162</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="warnings javítva,matrix int dfoubleből">
+      <created>1680676219033</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680676219033</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +118,7 @@
     <MESSAGE value="javítva a &quot;c&quot; feladat" />
     <MESSAGE value="warnins javítva" />
     <MESSAGE value="warnings javítva" />
-    <option name="LAST_COMMIT_MESSAGE" value="warnings javítva" />
+    <MESSAGE value="warnings javítva,matrix int dfoubleből" />
+    <option name="LAST_COMMIT_MESSAGE" value="warnings javítva,matrix int dfoubleből" />
   </component>
 </project>
