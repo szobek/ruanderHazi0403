@@ -19,7 +19,6 @@ public class Main {
      */
     static Scanner scanner = new Scanner(System.in);
     static Random random = new Random();
-    static int veszteseg = 300;
     public static void main(String[] args) {
         int vallalkozasokSzama = vallalkozasSzamBeker();
         int[][] vallalkozas = new int[vallalkozasokSzama][12];
@@ -49,7 +48,7 @@ public class Main {
     }
 
     private static void veletlenHonapEredmeny(int[][] vallalkozas) {
-        int honap = random.nextInt(1,13);
+        int honap = random.nextInt(1,12);
         System.out.println("Véletlenül kiálasztott hónap: "+honap);
         for(int i=0;i<vallalkozas.length;i++){
             System.out.println("A vállalkozás "+honap+". havi eredménye: "+vallalkozas[i][honap]);
@@ -60,7 +59,7 @@ public class Main {
     private static void eredmenyBekeres(int[][] vallalkozas) {
         for(int i=0;i<vallalkozas.length;i++){
             for(int j=0;j<vallalkozas[i].length;j++){
-                vallalkozas[i][j]= random.nextInt(2000);
+                vallalkozas[i][j]= random.nextInt(-300,2000);
 //                System.out.print(" Adja meg a(z) "+i+" vállalkozás "+(j+1)+" havi bevételt: ");
 //                vallalkozas[i][j]=Integer.parseInt(scanner.nextLine());
             }
@@ -91,8 +90,8 @@ public class Main {
         System.out.println();
         for(int i=0;i<vallalkozas.length;i++){
             for(int j=0;j<vallalkozas[i].length;j++){
-                if(vallalkozas[i][j]<veszteseg){
-                    System.out.println("A(z) "+(i+1)+". cég veszteséges hónapja: "+(j+1)+"\n");
+                if(vallalkozas[i][j]<0){
+                    System.out.println("A(z) "+(i+1)+". cég veszteséges hónapja: "+(j+1)+" ("+vallalkozas[i][j]+")\n");
                 }
             }
         }
